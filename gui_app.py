@@ -35,7 +35,7 @@ def index():
 if __name__ == '__main__':
     config = {
         'host': '0.0.0.0',
-        'port': 3336,
+        'port': 3007,
         'debug': True
     }
 
