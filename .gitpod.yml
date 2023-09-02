@@ -13,7 +13,11 @@ vscode:
   extensions:
     - ms-azuretools.vscode-docker
     - graphql.vscode-graphql
+    - graphql.vscode-graphql-syntax
     - yzhang.markdown-all-in-one
     - ms-vscode.vscode-typescript-tslint-plugin
     - hediet.vscode-drawio
     - ms-azuretools.vscode-docker
+
+tasks:
+- init: "/app/entrypoint.sh"
