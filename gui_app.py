@@ -17,7 +17,7 @@ def index():
         conversation.append({"role": "user", "content": user_input})
 
         request_payload = {
-            "model": "gpt-3.5-turbo",  # gpt-3.5-turbo
+            "model": "gpt-4",  # gpt-3.5-turbo
             "provider": g4f.Provider.DeepAi,
             "messages": conversation
         }

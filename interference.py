@@ -14,7 +14,7 @@ CORS(app)
 @app.route("/chat/completions", methods=['POST'])
 def chat_completions():
     streaming = request.json.get('stream', False)
-    model = request.json.get('model', 'gpt-3.5-turbo')
+    model = request.json.get('model', 'gpt-4')
     messages = request.json.get('messages')
 
     response = ChatCompletion.create(model=model, stream=streaming,
@@ -63,7 +63,7 @@ def chat_completions():
                 'id': f'chatcmpl-{completion_id}',
                 'object': 'chat.completion.chunk',
                 'created': completion_timestamp,
-                'model': 'gpt-3.5-turbo-0301',
+                'model': 'gpt-4',
                 'choices': [
                     {
                         'delta': {
