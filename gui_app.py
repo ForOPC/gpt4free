@@ -18,7 +18,7 @@ def index():
 
         request_payload = {
             "model": "gpt-4",  # gpt-3.5-turbo
-            "provider": g4f.Provider.DeepAi,
+            "provider": g4f.Provider.Bing,
             "messages": conversation
         }
 
